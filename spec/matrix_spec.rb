@@ -23,6 +23,11 @@ describe Matrix do
       matrix = Matrix.new("1 2\n10 20")
       expect(matrix.extract_column(0)).to eq([1 , 10])
     end
+
+    it "returns [5 , 20] as the second column of the matrix \n4 5\n19 20" do
+      matrix = Matrix.new("4 5\n19 20")
+      expect(matrix.extract_column(1)).to eq([5 , 20])
+    end
   end
 end
 

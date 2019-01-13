@@ -19,7 +19,7 @@ class Matrix
     array = []
     rows_of_matrix = @matrix.split("\n")
     rows_of_matrix.each do |row|
-      array << row.split(" ")[0].to_i
+      array << row.split(" ")[column_number].to_i
     end
     array
   end
