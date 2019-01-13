@@ -28,6 +28,11 @@ describe Matrix do
       matrix = Matrix.new("4 5\n19 20")
       expect(matrix.extract_column(1)).to eq([5 , 20])
     end
+
+    it "returns [] as the second column of the non-regular matrix\n10 19 15\n11 13 16" do
+      matrix = Matrix.new("10 19 15\n11 13 16")
+      expect(matrix.extract_column(1)).to eq([19, 13])
+    end
   end
 end
 
