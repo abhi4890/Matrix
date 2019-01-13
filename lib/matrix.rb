@@ -15,4 +15,13 @@ class Matrix
     array
   end
 
+  def extract_column(column_number)
+    array = []
+    rows_of_matrix = @matrix.split("\n")
+    rows_of_matrix.each do |row|
+      array << row.split(" ")[0].to_i
+    end
+    array
+  end
+
 end

@@ -18,5 +18,11 @@ describe Matrix do
     end
   end
 
+  context "when extracting a column of a matrix" do
+    it "returns [1 , 10] as the first column of the matrix \n1 2\n10 20" do
+      matrix = Matrix.new("1 2\n10 20")
+      expect(matrix.extract_column(0)).to eq([1 , 10])
+    end
+  end
 end
 
